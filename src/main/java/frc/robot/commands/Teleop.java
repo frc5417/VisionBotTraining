@@ -28,7 +28,7 @@ public class Teleop extends CommandBase {
     leftSpeed = RobotContainer.getLeftJoystick();
     rightSpeed = RobotContainer.getRightJoystick();
 
-    m_drive.setSpeed(0.25*leftSpeed, 0.25*rightSpeed);
+    m_drive.setSpeed(leftSpeed, rightSpeed);
   }
 
   // Called once the command ends or is interrupted.
